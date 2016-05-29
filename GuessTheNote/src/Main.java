@@ -116,8 +116,7 @@ public class Main {
 			case 11: note = "G#";
 				break;
 		}
-		
-		note = "Bb";
+
 	    try
 	    {
 	    	// Plays the sound
