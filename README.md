@@ -12,7 +12,7 @@ The 'easy' mode uses the notes:-
 * F
 * G
 
-The 'hard' mode ALSO uses the notes:-
+The 'hard' mode ALSO uses these notes:-
 
 * Bb
 * C#
