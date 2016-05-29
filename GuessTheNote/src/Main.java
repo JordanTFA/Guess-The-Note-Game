@@ -33,7 +33,7 @@ public class Main {
 				{
 					MAX = setup();
 					System.out.println("Would you like to play again? (y/n)");
-					answer = mainScan.next(".").charAt(0);
+					answer = mainScan.next(".").toLowerCase().charAt(0);
 				}
 		}
 		
@@ -52,12 +52,12 @@ public class Main {
 		// Scanner
 		setupScan = new Scanner(System.in);
 		
-		char difficulty = setupScan.next(".").charAt(0);
+		char difficulty = setupScan.next(".").toLowerCase().charAt(0);
 		
 		// Input validation
 		while(difficulty != 'h' && difficulty != 'e')
 		{
-			difficulty = setupScan.next(".").charAt(0);
+			difficulty = setupScan.next(".").toLowerCase().charAt(0);
 		}
 		
 		// Max value of which note will be picked
@@ -133,7 +133,7 @@ public class Main {
 		
 		while(correct ^ lives != 0)
 		{
-			guess = playScan.nextLine();
+			guess = playScan.nextLine().toUpperCase();
 			if(guess.equals(note))		// If correct
 			{
 				System.out.println("Congratulations! You were correct!");
@@ -154,7 +154,7 @@ public class Main {
 		{
 			answer = setupScan.next(".").charAt(0);
 		}
-		for (int i = 0; i < 150; ++i) System.out.println();	// This is a cheeky way of clearing the console, there'll be a better way.
+		for (int i = 0; i < 5; ++i) System.out.println();	// This is a cheeky way of clearing the console, there'll be a better way.
 		
 		return answer;
 
