@@ -117,6 +117,7 @@ public class Main {
 				break;
 		}
 		
+		note = "Bb";
 	    try
 	    {
 	    	// Plays the sound
@@ -133,7 +134,9 @@ public class Main {
 		
 		while(correct ^ lives != 0)
 		{
-			guess = playScan.nextLine().toUpperCase();
+			guess = playScan.nextLine();
+			guess = guess.substring(0, 1).toUpperCase() + guess.substring(1);
+			
 			if(guess.equals(note))		// If correct
 			{
 				System.out.println("Congratulations! You were correct!");
